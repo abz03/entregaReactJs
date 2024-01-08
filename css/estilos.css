@@ -1,0 +1,26 @@
+body {
+  background-image: url("/medios/fondopantallarpg.jpg"); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  cursor: url("/medios/cat-happy-cursor.png"), auto;
+}
+
+.header {
+  background-color: rgba(13, 5, 255, 0.393); /* Fondo semitransparente para mejorar visibilidad del texto */
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.header h1 {
+  font-family: 'Press Start 2P', cursive; /* Fuente con estilo 8 bits */
+}
+
+.header p {
+  font-family: 'Press Start 2P', cursive; /* Fuente con estilo 8 bits */
+}
+
+/*se me olvido como colocar en "and" en CSS, fix para el otro release*/

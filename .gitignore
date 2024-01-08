@@ -1,0 +1,6 @@
+# los archivos que git debe de ignorar
+README.md
+.vscode
+
+# Ignorar archivos de texto txt
+*.txt
