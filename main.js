@@ -19,7 +19,7 @@ function comienzoDelJuego() {
     alert(`${nombreIngresado}, para continuar tendrás que decirme tu estatus con 3 valores que te preguntaremos a continuación.`);
     
     const datosJugador = [nombreIngresado];
-    console.log( datosJugador[0] ) // 1; 
+    console.log( datosJugador[0] );
 
     let valorVida = prompt('¿Cuánta vida (o hp) quieres que tenga tu personaje?');
     while (valorVida === null || isNaN(valorVida) || !(valorVida >= 0 && valorVida < 11)) {
@@ -41,8 +41,13 @@ function comienzoDelJuego() {
 
 
 /*
-    alert(`Tus status son:`);
-    alert(`Vida: ${valorVida} Fuerza o ataque: ${valorFuerza}`);
+     datosJugador.push('valorVida', 'valorFuerza', 'valorMagia');
+console.log(datosJugador);
+
+    alert('Tus status son:');
+
+
+    //alert(`Vida: ${valorVida} Fuerza o ataque: ${valorFuerza}`);
 
     if (nombreIngresado !== null) { // Resto del código (almacenamiento local, etc.)
         localStorage.setItem('miValor', nombreIngresado);
