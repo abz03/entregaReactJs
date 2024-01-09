@@ -39,16 +39,15 @@ function comienzoDelJuego() {
         valorMagia = prompt('¿Cuánta magia quieres que tenga tu personaje?');
     }
 
-
-/*
-     datosJugador.push('valorVida', 'valorFuerza', 'valorMagia');
-console.log(datosJugador);
+    datosJugador.push(valorVida,valorFuerza,valorMagia);
+    console.log(datosJugador.join(','));
 
     alert('Tus status son:');
+    alert(`Vida: ${valorVida} , Fuerza: ${valorFuerza}, Magia: ${valorMagia}`);
 
-
+/*
+    alert('Tus status son:');
     //alert(`Vida: ${valorVida} Fuerza o ataque: ${valorFuerza}`);
-
     if (nombreIngresado !== null) { // Resto del código (almacenamiento local, etc.)
         localStorage.setItem('miValor', nombreIngresado);
         console.log(`Valor almacenado con éxito: ${nombreIngresado}`);
