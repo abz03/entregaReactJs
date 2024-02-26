@@ -1,26 +1,21 @@
 body {
-  background-image: url("/medios/fondopantallarpg.jpg"); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  /* background-image: url("/medios/fondopantallarpg.jpg"); */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   cursor: url("/medios/cat-happy-cursor.png"), auto;
 }
 
-.header {
-  background-color: rgba(13, 5, 255, 0.393); /* Fondo semitransparente para mejorar visibilidad del texto */
-  padding: 20px;
-  text-align: center;
-  color: rgb(255, 255, 255);
+main {
+  flex: 1;
 }
 
-.header h1 {
-  font-family: 'Press Start 2P', cursive; /* Fuente con estilo 8 bits */
+.footer {
+  background-color: purple; /* Color personalizado para el footer */
 }
 
-.header p {
-  font-family: 'Press Start 2P', cursive; /* Fuente con estilo 8 bits */
+.product-image {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 500px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Mantiene las proporciones de la imagen */
 }
-
-/*se me olvido como colocar en "and" en CSS, fix para el otro release*/

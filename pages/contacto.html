@@ -1,0 +1,69 @@
+<!-- Copy paste de un proyecto anterior que habia relizado y entregado, cambiando colores en header y antidad de botones y elementos en footer (cuadros remiau) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../medios/logo_pestaña.png" type="image/png">
+
+    <title>Contacto</title>
+    <!-- Incorporación de Bootstrap para estilos -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a hoja de estilos CSS personalizada -->
+    <link href="../css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Encabezado con barra de navegación -->
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(224, 142, 10);">
+        <a class="navbar-brand text-white" href="#">Tienda de Pokemons, compralos todos</a>
+        <!-- Botón de contacto con enlace a página de inicio -->
+        <div class="ml-auto">
+            <a href="../index.html" class="btn btn-light" target="_blank">Compra pokemons</a>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main role="main">
+    <div class="container mt-3">
+      <h2>Contacta con nosotros</h2>
+      <p>Ingresa tus datos y la razón por la que nos contactas:</p>
+
+      <!-- Formulario con evento onsubmit para validación -->
+      <form onsubmit="return validarFormulario();">
+        <div class="mb-3 mt-3">
+            <label for="nombre">Nombre y apellido:</label>
+            <input class="form-control" type="text" id="nombre" name="nombre">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="correo">Correo:</label>
+            <input class="form-control" type="email" id="correo" name="correo">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="telefono">Teléfono:</label>
+            <input class="form-control" type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="comentario">Dinos por qué nos contactas y que pokemon andas buscando:</label>
+            <textarea class="form-control" rows="5" id="comentario" name="comentario"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <hr class="featurette-divider">
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer text-white text-center py-3" style="background-color: rgb(224, 142, 10);">
+    <div class="container">
+        &copy; 2024 Tienda relacionada a tiendas remiau
+    </div>
+  </footer>
+      <!-- Script personalizado para cargar productos -->
+      <script src="../javascript/contacto_script.js"></script>
+</body>
+</html>
