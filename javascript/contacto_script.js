@@ -1,10 +1,11 @@
+//Script mostrado en entrega anterior y adaptado a la de ahora.
 
     // Función para validar que el nombre no esté vacío
     function validarNombre(nombre) {
         // Verifica si el nombre no está vacío, si no cumple con ello pasa directo al while
         while (nombre.trim() === '') {
             alert('Por favor, ingrese un nombre.'); // Genera una alerta si no cumple con la validación.
-            nombre = prompt('Ingrese un nombre:'); 
+            nombre = prompt('Ingrese un nombre:'); // le pide al usuario amablemente sin utilizar la violencia que ingrese su nombre, lo mismo ocurrira con su telefono correo y comentario.
         }
         return nombre;
     }
@@ -72,7 +73,7 @@
         alert('Sus datos son:\nNombre: ' + nombre + '\nTeléfono: ' + telefono + '\nCorreo: ' + correo + '\nLo Contactaremos pronto, muchas gracias por escribirnos');
         // No agregue el comentario ya que nos es data tan relevante pra el cliente y puede ser largo, siendo poco estetico "imprimir" el valor
     
-        // Para evitar el envío del formulario y poder visualizar los datos en la consola
+        // Para evitar el envío del formulario y poder visualizar los datos en la consola ya que no lo mando a una api porque no tengo un servidor, aws esta muy caro.
         return false;
     }
     

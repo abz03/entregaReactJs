@@ -1,4 +1,4 @@
-let selectedProducts = [];
+let selectedProducts = []; // array el cual contendra los elementos seleccionados, sera usado en la funcion de mas abajo
 
 // Funcion para cargar productos desde la API al cargar la página
 function loadProducts() {
@@ -30,7 +30,7 @@ function loadProducts() {
                                     </div>
                                 </div>
                             </div>
-                        `;
+                        `; //como cuesta comentar en html mejor comento aca, dentro del body de index se iran agregando 6 elementos los cuales contentan la informacion de la api, usando bootstrap para que se vea mas bello. El boton comprar realizara la funcion de seleccionar al pokemon y con la funcion y libreria de mas abajo se mostrara el nombre y que ah sido satisfactoriamente seleccionado.
                     })
             });
         })
@@ -43,14 +43,14 @@ function loadProducts() {
 // Función para manejar la selección de Pokémon
 function selectProduct(pokemonName) {
     if (selectedProducts.length >= 2) {
-        alert('Ya has seleccionado 2 Pokemon, deja para los demas');
+        alert('Ya has seleccionado 2 Pokemon, deja para los demas'); // solo puedes seleccionar 2, uno mas que en el juego
         return;
     }
-    selectedProducts.push(pokemonName);
+    selectedProducts.push(pokemonName); //parte de la funcion que muestra cuando se hace click en un boton de "seleccionar" y te muestra un pokemon
     Swal.fire({
         title: 'Pokemon Seleccionado',
-        text: pokemonName,
-        icon: 'success'
+        text: pokemonName,   //muestra el nombre del pokemon seleccionado
+        icon: 'success'      // en base a la libreria mostrara un ticket como de forma correcta
     });
 }
 

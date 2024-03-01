@@ -4,3 +4,6 @@ README.md
 
 # Ignorar archivos de texto txt
 *.txt
+
+# por si se me pasa borrarlo
+index copy.html 
